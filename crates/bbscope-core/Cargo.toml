@@ -1,0 +1,22 @@
+[package]
+name = "bbscope-core"
+description = "Shared model, HTTP client, normalization and the Platform trait for bbscope"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+async-trait.workspace = true
+chrono.workspace = true
+data-encoding.workspace = true
+hmac.workspace = true
+psl.workspace = true
+regex.workspace = true
+reqwest.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+sha1.workspace = true
+thiserror.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+url.workspace = true

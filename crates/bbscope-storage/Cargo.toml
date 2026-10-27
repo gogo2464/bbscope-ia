@@ -1,0 +1,13 @@
+[package]
+name = "bbscope-storage"
+description = "Scope database with change tracking for bbscope"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+bbscope-core.workspace = true
+chrono.workspace = true
+rusqlite.workspace = true
+thiserror.workspace = true
+tracing.workspace = true

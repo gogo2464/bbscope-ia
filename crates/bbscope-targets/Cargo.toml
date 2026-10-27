@@ -1,0 +1,11 @@
+[package]
+name = "bbscope-targets"
+description = "Extracts wildcards, domains, URLs, IPs and CIDRs from bbscope entries"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+bbscope-core.workspace = true
+regex.workspace = true
+tracing.workspace = true

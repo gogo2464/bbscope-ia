@@ -1,0 +1,25 @@
+[package]
+name = "bbscope-platforms"
+description = "Bug bounty platform clients (HackerOne, Bugcrowd, Intigriti, YesWeHack, Immunefi) for bbscope"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[features]
+default = ["hackerone", "bugcrowd", "intigriti", "yeswehack", "immunefi"]
+hackerone = ["dep:base64"]
+bugcrowd = ["dep:scraper", "dep:regex"]
+intigriti = []
+yeswehack = []
+immunefi = []
+
+[dependencies]
+bbscope-core.workspace = true
+async-trait.workspace = true
+base64 = { workspace = true, optional = true }
+regex = { workspace = true, optional = true }
+scraper = { workspace = true, optional = true }
+serde_json.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+url.workspace = true
